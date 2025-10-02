@@ -1,0 +1,58 @@
+ body {
+        font-family: 'Inter', sans-serif;
+        overflow-x: hidden;
+      }
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      
+      /* Mobile dropdown menu styles */
+      #mobile-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 1rem;
+        width: 200px;
+        transform: translateY(-10px);
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      #mobile-menu.active {
+        display: flex;
+        transform: translateY(0);
+        opacity: 1;
+      }
+      
+      /* Hero image positioning for mobile */
+      @media (max-width: 1023px) {
+        .hero-image-container {
+          min-height: 300px;
+          margin-top: 2rem;
+        }
+        
+        .floating-feature {
+          display: none;
+        }
+      }
+      
+      /* Adjust footer for mobile */
+      @media (max-width: 640px) {
+        .footer-stats {
+          flex-direction: column;
+          gap: 1rem;
+        }
+        
+        .footer-stats-divider {
+          display: none;
+        }
+      }
+      
+      /* Link styling for cards */
+      .card-link {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        height: 100%;
+        width: 100%;
+      }

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>TaxPoa</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <link rel="stylesheet" href="now.css">
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#0fbd66",
+              "background-light": "#f6f8f7",
+              "background-dark": "#102219",
+            },
+            fontFamily: {
+              display: ["Inter"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              lg: "1rem",
+              xl: "1.5rem",
+              full: "9999px"
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+     
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-white">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<div class="absolute inset-0 z-0 bg-cover bg-center" style="background-image: url('images/leon-dewiwje-ldDmTgf89gU-unsplash.jpg');">
+<div class="absolute inset-0 bg-black/60 dark:bg-black/80"></div>
+</div>
+<div class="relative flex h-full grow flex-col">
+<header class="relative flex items-center justify-between whitespace-nowrap px-4 py-5 sm:px-6 md:px-10">
+<div class="flex items-center gap-3 text-white">
+<img class="h-8 w-auto" src="images/pngegg.png" alt="Government of Kenya">
+<a href="index.html" class="text-xl font-bold">TaxPoa</a>
+</div>
+<nav class="hidden items-center gap-6 md:flex lg:gap-8">
+   <a class="text-sm font-medium text-white/80 transition-colors hover:text-white" href="index.html">Home</a>
+<a class="text-sm font-medium text-white/80 transition-colors hover:text-white" href="Solutions.html">Solutions</a>
+<a class="text-sm font-medium text-white/80 transition-colors hover:text-white" href="pricing.html">Pricing</a>
+<a class="text-sm font-medium text-white/80 transition-colors hover:text-white" href="docs.html">Docs</a>
+<a class="text-sm font-medium text-white/80 transition-colors hover:text-white" href="signin.html">Sign In</a>
+</nav>
+<div class="flex items-center gap-4">
+<a href="signup.html" class="hidden h-10 items-center justify-center rounded-lg bg-primary px-4 text-sm font-bold text-background-dark transition-transform hover:scale-105 sm:flex sm:px-5">Get Started</a>
+<button class="relative md:hidden" id="mobile-menu-button" type="button">
+<span class="material-symbols-outlined text-white">menu</span>
+</button>
+</div>
+
+<!-- Mobile Dropdown Menu -->
+<div id="mobile-menu" class="absolute top-full right-0 z-50 mt-2 w-48 origin-top-right flex-col rounded-lg border border-white/10 bg-background-dark/95 p-4 shadow-xl backdrop-blur-lg md:hidden">
+<a class="block rounded-md px-4 py-3 text-sm font-medium text-white/80 transition-colors hover:bg-white/10 hover:text-white" href="index.html">Home</a>
+<a class="block rounded-md px-4 py-3 text-sm font-medium text-white/80 transition-colors hover:bg-white/10 hover:text-white" href="Solutions.html">Solutions</a>
+<a class="block rounded-md px-4 py-3 text-sm font-medium text-white/80 transition-colors hover:bg-white/10 hover:text-white" href="pricing.html">Pricing</a>
+<a class="block rounded-md px-4 py-3 text-sm font-medium text-white/80 transition-colors hover:bg-white/10 hover:text-white" href="docs.html">Docs</a>
+<a class="block rounded-md px-4 py-3 text-sm font-medium text-white/80 transition-colors hover:bg-white/10 hover:text-white" href="signin.html">Sign In</a>
+<div class="mt-2 border-t border-white/10 pt-2">
+<a href="signup.html" class="mt-2 flex h-10 w-full items-center justify-center rounded-lg bg-primary px-4 text-sm font-bold text-background-dark transition-transform hover:scale-105">Get Started</a>
+</div>
+</div>
+</header>
+
+<main class="flex flex-1 flex-col items-center justify-center px-4 py-8 sm:p-6">
+<div class="grid w-full max-w-7xl grid-cols-1 items-center gap-8 lg:grid-cols-2 lg:gap-12">
+<div class="flex flex-col gap-6 text-center lg:gap-8 lg:text-left">
+<div class="flex flex-col gap-4">
+<h1 class="text-3xl font-black uppercase tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">Simplify Your KRA Experience With Us</h1>
+<p class="text-base text-white/70 sm:text-lg md:text-xl">Seamless PIN verification, obligation management, and eTIMS invoicing.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-3 sm:gap-4 lg:justify-start">
+<a href="signup.html" class="flex h-12 items-center justify-center rounded-lg bg-primary px-5 text-base font-bold text-background-dark shadow-lg transition-transform hover:scale-105 sm:px-6">Get Started</a>
+<a href="about.html" class="flex h-12 items-center justify-center rounded-lg border-2 border-primary/50 bg-primary/20 px-5 text-base font-bold text-white backdrop-blur-sm transition-colors hover:border-primary/80 hover:bg-primary/30 sm:px-6">Learn More</a>
+</div>
+</div>
+<div class="hero-image-container relative h-full w-full lg:min-h-[400px]">
+<div class="absolute inset-0 rounded-xl bg-center bg-no-repeat bg-cover" style='background-image: url("images/kelly-sikkema-8DEDp6S93Po-unsplash.jpg");'></div>
+<a href="pin.html" class="floating-feature absolute -bottom-4 -left-4 flex items-center gap-3 rounded-lg bg-white/10 p-3 backdrop-blur-md transition-transform hover:-translate-y-2 lg:-bottom-8 lg:-left-8 lg:p-4">
+<span class="material-symbols-outlined text-primary">person_search</span>
+<span class="font-semibold">PIN Verification</span>
+</a>
+<a href="obligations.html" class="floating-feature absolute -top-4 right-6 flex items-center gap-3 rounded-lg bg-white/10 p-3 backdrop-blur-md transition-transform hover:-translate-y-2 lg:-top-8 lg:right-12 lg:p-4">
+<span class="material-symbols-outlined text-primary">event_available</span>
+<span class="font-semibold">Obligations</span>
+</a>
+<a href="etims.html" class="floating-feature absolute bottom-10 -right-4 flex items-center gap-3 rounded-lg bg-white/10 p-3 backdrop-blur-sm transition-transform hover:-translate-y-2 lg:bottom-16 lg:-right-10 lg:p-4">
+<span class="material-symbols-outlined text-primary">receipt_long</span>
+<span class="font-semibold">eTIMS</span>
+</a>
+</div>
+</div>
+<div class="mt-12 grid w-full max-w-7xl grid-cols-1 gap-4 sm:grid-cols-2 lg:mt-16 lg:grid-cols-4">
+<a href="pin.html" class="flex cursor-pointer flex-col gap-3 rounded-lg border border-white/10 bg-white/5 p-4 backdrop-blur-sm transition-all hover:border-white/20 hover:bg-white/10 sm:p-5">
+<span class="material-symbols-outlined text-primary">how_to_reg</span>
+<div class="flex flex-col">
+<h3 class="font-bold">PIN Verification</h3>
+<p class="text-sm text-white/60">Instant taxpayer confirmation</p>
+</div>
+</a>
+<a href="obligations.html" class="flex cursor-pointer flex-col gap-3 rounded-lg border border-white/10 bg-white/5 p-4 backdrop-blur-sm transition-all hover:border-white/20 hover:bg-white/10 sm:p-5">
+<span class="material-symbols-outlined text-primary">task_alt</span>
+<div class="flex flex-col">
+<h3 class="font-bold">Obligation Tracking</h3>
+<p class="text-sm text-white/60">Stay ahead of deadlines</p>
+</div>
+</a>
+<a href="compliance.html" class="flex cursor-pointer flex-col gap-3 rounded-lg border border-white/10 bg-white/5 p-4 backdrop-blur-sm transition-all hover:border-white/20 hover:bg-white/10 sm:p-5">
+<span class="material-symbols-outlined text-primary">verified_user</span>
+<div class="flex flex-col">
+<h3 class="font-bold">Compliance Checker</h3>
+<p class="text-sm text-white/60">Verify before you file</p>
+</div>
+</a>
+<a href="etims.html" class="flex cursor-pointer flex-col gap-3 rounded-lg border border-white/10 bg-white/5 p-4 backdrop-blur-sm transition-all hover:border-white/20 hover:bg-white/10 sm:p-5">
+<span class="material-symbols-outlined text-primary">integration_instructions</span>
+<div class="flex flex-col">
+<h3 class="font-bold">eTIMS Integration</h3>
+<p class="text-sm text-white/60">Issue valid invoices instantly</p>
+</div>
+</a>
+</div>
+</main>
+<footer class="relative z-10 w-full px-4 pb-5 sm:px-6 md:px-10 mt-8">
+<div class="flex items-center justify-center gap-4 rounded-lg bg-black/20 p-4 backdrop-blur-md sm:gap-6">
+<div class="footer-stats flex flex-wrap items-center justify-center gap-4 sm:gap-6">
+<div class="text-center">
+<p class="text-xl font-bold sm:text-2xl">10,000+</p>
+<p class="text-xs text-white/60 sm:text-sm">Verifications</p>
+</div>
+<div class="footer-stats-divider h-6 w-px bg-white/20 sm:h-8"></div>
+<div class="text-center">
+<p class="text-xl font-bold sm:text-2xl">99.9%</p>
+<p class="text-xs text-white/60 sm:text-sm">Uptime</p>
+</div>
+<div class="footer-stats-divider h-6 w-px bg-white/20 sm:h-8"></div>
+<div class="text-center">
+<p class="text-xl font-bold sm:text-2xl">Trusted</p>
+<p class="text-xs text-white/60 sm:text-sm">by SMEs</p>
+</div>
+</div>
+</div>
+<div class="mt-4 flex flex-col items-center justify-between gap-2 text-xs text-white/50 sm:flex-row">
+<p class="text-center sm:text-left">© 2024 TaxPoa. This platform integrates with KRA APIs but is independently operated.</p>
+<div class="flex gap-4">
+<a class="hover:text-white" href="terms.html">Terms</a>
+<a class="hover:text-white" href="privacy.html">Privacy</a>
+<a class="hover:text-white" href="contact.html">Contact</a>
+</div>
+</div>
+</footer>
+</div>
+</div>
+
+<script>
+  // Mobile menu toggle functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    if (mobileMenuButton && mobileMenu) {
+      // Toggle mobile menu
+      mobileMenuButton.addEventListener('click', function(e) {
+        e.stopPropagation();
+        mobileMenu.classList.toggle('active');
+        
+        // Toggle menu icon between menu and close
+        const menuIcon = mobileMenuButton.querySelector('span');
+        if (mobileMenu.classList.contains('active')) {
+          menuIcon.textContent = 'close';
+        } else {
+          menuIcon.textContent = 'menu';
+        }
+      });
+      
+      // Close mobile menu when clicking outside
+      document.addEventListener('click', function(e) {
+        if (mobileMenu.classList.contains('active') && 
+            !mobileMenu.contains(e.target) && 
+            !mobileMenuButton.contains(e.target)) {
+          mobileMenu.classList.remove('active');
+          const menuIcon = mobileMenuButton.querySelector('span');
+          menuIcon.textContent = 'menu';
+        }
+      });
+      
+      // Close mobile menu when clicking on a link
+      const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+      mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          mobileMenu.classList.remove('active');
+          const menuIcon = mobileMenuButton.querySelector('span');
+          menuIcon.textContent = 'menu';
+        });
+      });
+      
+      // Close mobile menu when pressing Escape key
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && mobileMenu.classList.contains('active')) {
+          mobileMenu.classList.remove('active');
+          const menuIcon = mobileMenuButton.querySelector('span');
+          menuIcon.textContent = 'menu';
+        }
+      });
+    }
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 1,
+                'wght' 300,
+                'GRAD' 0,
+                'opsz' 24
+        }
+
+        /* Mobile menu animation */
+        .mobile-menu {
+            transform: translateY(-20px);
+            opacity: 0;
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            display: none;
+        }
+
+        .mobile-menu.active {
+            transform: translateY(0);
+            opacity: 1;
+            display: flex;
+        }
+
+        /* Custom animations */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate-fadeInUp {
+            animation: fadeInUp 0.5s ease-out forwards;
+        }
+
+        /* Tab navigation specific styles */
+        .tab-container {
+            position: relative;
+        }
+        
+        .tab-indicator {
+            position: absolute;
+            bottom: 0;
+            height: 3px;
+            background: #0fbd66;
+            border-radius: 3px 3px 0 0;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .tab {
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .tab::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 3px;
+            background: #0fbd66;
+            border-radius: 3px 3px 0 0;
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+        
+        .tab:hover::after {
+            width: 40%;
+        }
+        
+        .tab.active::after {
+            width: 100%;
+        }
+
+        /* Glassmorphism effect */
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
